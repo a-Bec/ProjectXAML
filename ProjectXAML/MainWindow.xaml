@@ -10,8 +10,46 @@
         Width="{Binding SystemParameters.PrimaryScreenWidth, Mode=OneWay}"
         Background="Black"
         >
-    <Grid>
-        <Button x:Name="StartButton" Content="Start" HorizontalAlignment="Center"
-                VerticalAlignment="Center" Width="100" Height="30" Foreground="Green"/>
+    <Grid VerticalAlignment="Center">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="40"/>
+        </Grid.RowDefinitions>
+        
+        <Button x:Name="StartButton" Content="Start" HorizontalAlignment="Center" Grid.Row="0"
+            VerticalAlignment="Center" Width="100" Height="30" Foreground="Green" Background="Transparent">
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border CornerRadius="10" BorderThickness="2" BorderBrush="Green">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        
+        <Button x:Name="LoadButton" Content="Load" HorizontalAlignment="Center" Grid.Row="1"
+            VerticalAlignment="Center" Width="100" Height="30" Foreground="Green" Background="Transparent">
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border CornerRadius="10" BorderThickness="2" BorderBrush="Green">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        
+        <Button x:Name="ExitButton" Content="Exit" HorizontalAlignment="Center" Grid.Row="2"
+            VerticalAlignment="Center" Width="100" Height="30" Foreground="Green" Background="Transparent">
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border CornerRadius="10" BorderThickness="2" BorderBrush="Green">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        
     </Grid>
+
 </Window>
