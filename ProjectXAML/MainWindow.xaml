@@ -8,8 +8,10 @@
         Title="ProjectXAML"
         Height="{Binding SystemParameters.PrimaryScreenHight, Mode=OneWay}" 
         Width="{Binding SystemParameters.PrimaryScreenWidth, Mode=OneWay}"
+        Background="Black"
         >
     <Grid>
-
+        <Button x:Name="StartButton" Content="Start" HorizontalAlignment="Center"
+                VerticalAlignment="Center" Width="100" Height="30" Foreground="Green"/>
     </Grid>
 </Window>
