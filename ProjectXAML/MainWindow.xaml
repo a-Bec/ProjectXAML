@@ -5,7 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ProjectXAML"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="ProjectXAML"
+        Height="{Binding SystemParameters.PrimaryScreenHight, Mode=OneWay}" 
+        Width="{Binding SystemParameters.PrimaryScreenWidth, Mode=OneWay}"
+        >
     <Grid>
 
     </Grid>

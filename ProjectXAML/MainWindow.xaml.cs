@@ -23,6 +23,12 @@ namespace ProjectXAML
         public MainWindow()
         {
             InitializeComponent();
+            CloseButton.Click += CloseButton_Click;
+        }
+
+        private void CloseButton_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
         }
     }
 }
