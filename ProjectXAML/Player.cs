@@ -1,5 +1,7 @@
-﻿using System.Configuration;
+﻿using System;
+using System.Configuration;
 using System.Dynamic;
+using System.Runtime.InteropServices;
 
 namespace ProjectXAML
 {
@@ -24,7 +26,11 @@ namespace ProjectXAML
         {
             return color;
         }
-
+        public void setPosition()
+        {
+            int playerSize = 10;
+            int screenHigth = Screen.PrimaryScreen.Bounds.Height;
+        }
         public string getName()
         {
             return name;
@@ -42,6 +48,7 @@ namespace ProjectXAML
         {
 
         }
+
 
     }
 }
