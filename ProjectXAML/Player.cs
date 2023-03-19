@@ -10,6 +10,8 @@ namespace ProjectXAML
         string name = "player";
         string color;
         int score = 0;
+        int playerPositionX;
+        int playerPositionY;
 
 
 
@@ -26,10 +28,11 @@ namespace ProjectXAML
         {
             return color;
         }
-        public void setPosition()
+        public void setPosition( int screenHight, int screenWidth )
         {
             int playerSize = 10;
-            int screenHigth = Screen.PrimaryScreen.Bounds.Height;
+            int x = (screenWidth - playerSize) / 2;
+            int y = (screenHight - playerSize) / 2;
         }
         public string getName()
         {
