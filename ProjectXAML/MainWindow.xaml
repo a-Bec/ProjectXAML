@@ -10,6 +10,7 @@
         Width="{Binding SystemParameters.PrimaryScreenWidth, Mode=OneWay}"
         Background="Black"
         >
+    <!-- MainMenue-->
     <Grid VerticalAlignment="Center">
         <Grid.RowDefinitions>
             <RowDefinition Height="40"/>
@@ -51,5 +52,6 @@
         </Button>
         
     </Grid>
+    <!--#endregion-->
 
 </Window>
