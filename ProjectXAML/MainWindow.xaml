@@ -10,57 +10,7 @@
         Width="{Binding SystemParameters.PrimaryScreenWidth, Mode=OneWay}"
         Background="Black"
         >
-    <!--MainMenue-->
-    <Grid x:Name="mainMenu" VerticalAlignment="Center" Visibility="Visible">
-        <Grid.RowDefinitions>
-            <RowDefinition Height="40"/>
-            <RowDefinition Height="40"/>
-            <RowDefinition Height="40"/>
-        </Grid.RowDefinitions>
-        
-        <Button x:Name="StartButton" Content="Start" HorizontalAlignment="Center" Grid.Row="0"
-            VerticalAlignment="Center" Width="100" Height="30" Foreground="Green" Background="Transparent"
-                Click="StartButton_Click">
-            <Button.Template>
-                <ControlTemplate TargetType="{x:Type Button}">
-                    <Border CornerRadius="10" BorderThickness="2" BorderBrush="Green">
-                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                    </Border>
-                </ControlTemplate>
-            </Button.Template>
-        </Button>
-        
-        <Button x:Name="LoadButton" Content="Load" HorizontalAlignment="Center" Grid.Row="1"
-            VerticalAlignment="Center" Width="100" Height="30" Foreground="Green" Background="Transparent"
-                Click="LoadButton_Click">
-            <Button.Template>
-                <ControlTemplate TargetType="{x:Type Button}">
-                    <Border CornerRadius="10" BorderThickness="2" BorderBrush="Green">
-                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                    </Border>
-                </ControlTemplate>
-            </Button.Template>
-        </Button>
-
-        <Button x:Name="ExitButton" Content="Exit" HorizontalAlignment="Center" Grid.Row="2"
-            VerticalAlignment="Center" Width="100" Height="30" Foreground="Green" Background="Transparent"
-                Click="ExitButton_Click">
-            <Button.Template>
-                <ControlTemplate TargetType="{x:Type Button}">
-                    <Border CornerRadius="10" BorderThickness="2" BorderBrush="Green">
-                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                    </Border>
-                </ControlTemplate>
-            </Button.Template>
-        </Button>
+    <Grid>
+        <Frame x:Name="MainFrame"/>
     </Grid>
-    <!--#endregion-->
-    
-    <!--NameField-->
-    <Grid x:Name="nameBox"  VerticalAlignment="Center" Visibility="Collapsed" DataContext="{Binding Player}">
-        <TextBlock Text="Choose your name:" />
-        <TextBlock Text="{Binding name, Mode=TwoWay}"/>
-    </Grid>
-    <!--#endregion-->
-
 </Window>
