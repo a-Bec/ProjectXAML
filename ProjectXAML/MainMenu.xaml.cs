@@ -33,11 +33,11 @@ namespace ProjectXAML
                 MainWindow mainWindow = (MainWindow)Window.GetWindow(this);
 
                 mainWindow.MainFrame.NavigationService.Navigate(nameBox);
-
+/*
                 int screenHeight = Screen.PrimaryScreen.Bounds.Height;
                 int screenWidth = Screen.PrimaryScreen.Bounds.Width;
                 int score = player.getScore();
-                player.setPosition(screenHeight, screenWidth);
+                player.setPosition(screenHeight, screenWidth); */
             }
             catch
             {

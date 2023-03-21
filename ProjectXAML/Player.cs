@@ -15,10 +15,10 @@ namespace ProjectXAML
         int speed = 10;
         int playerSize = 10;
 
-        public string playerName()
+        public string playerName
         {
-            get { return name; };
-            set { name = value; };
+            get;
+            set;
         }
 
         public int setScore( int score )

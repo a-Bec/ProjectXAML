@@ -9,6 +9,7 @@ namespace ProjectXAML
         public MainWindow()
         {
             InitializeComponent();
+            onLoad(this, null);
         }
 
         private void onLoad(object sender, RoutedEventArgs e)

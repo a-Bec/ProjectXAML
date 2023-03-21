@@ -1,6 +1,6 @@
 ﻿using System.Windows;
 using System.Windows.Media;
-using System.Windows.Forms;
+//using System.Windows.Forms;
 
 namespace ProjectXAML
 {
@@ -10,13 +10,13 @@ namespace ProjectXAML
         {
             try
             {
-                int screenHeight = Screen.PrimaryScreen.Bounds.Height;
-                int screenWidth = Screen.PrimaryScreen.Bounds.Width;
+               // int screenHeight = Screen.PrimaryScreen.Bounds.Height;
+               // int screenWidth = Screen.PrimaryScreen.Bounds.Width;
 
                 Player player = new Player();
                 player.setColor();
                 int score = player.getScore();
-                player.setPosition( screenHeight, screenWidth);
+              //  player.setPosition( screenHeight, screenWidth);
             }
             catch
             {

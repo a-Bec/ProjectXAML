@@ -10,6 +10,6 @@
 
     <Grid x:Name="nameBox"  VerticalAlignment="Center" Visibility="Collapsed" DataContext="{Binding Player}">
         <TextBlock Text="Choose your name:" />
-        <TextBlock Text="{Binding name, Mode=TwoWay}"/>
+        <TextBlock Text="{Binding playerName, Mode=TwoWay}"/>
     </Grid>
 </Page>
