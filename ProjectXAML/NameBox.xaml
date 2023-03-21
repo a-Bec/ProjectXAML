@@ -6,10 +6,21 @@
       xmlns:local="clr-namespace:ProjectXAML"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="Page1">
-
-    <Grid x:Name="nameBox"  VerticalAlignment="Center" Visibility="Collapsed" DataContext="{Binding Player}">
-        <TextBlock Text="Choose your name:" />
-        <TextBlock Text="{Binding playerName, Mode=TwoWay}"/>
+      Title="NameBox">
+    <Grid VerticalAlignment="Center" HorizontalAlignment="Center">
+        <Border BorderBrush="Green" BorderThickness="2" CornerRadius="10">
+            <Grid x:Name="nameBox"  VerticalAlignment="Center" HorizontalAlignment="Center" Visibility="Visible" DataContext="{Binding Player}"
+                  Height="100" Width="200">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="40" />
+                    <RowDefinition Height="40" />
+                </Grid.RowDefinitions>
+        
+                <Label Content="Choose your name:" Foreground="Green" Background="Transparent" Grid.Row="0" VerticalAlignment="Top"/>
+                <Border BorderThickness="2" BorderBrush="Green" CornerRadius="10">
+                    <TextBlock Text="{Binding playerName, Mode=TwoWay}" Foreground="Green" Background="Transparent" Grid.Row="1" VerticalAlignment="Bottom"/>
+                </Border>
+            </Grid>
+        </Border>
     </Grid>
 </Page>
