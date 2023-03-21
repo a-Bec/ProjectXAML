@@ -18,7 +18,7 @@ namespace ProjectXAML
                 player.setColor();
                 string name = player.getName();
                 int score = player.getScore();
-                player.setPosition(int screenHeight, int screenWidth);
+                player.setPosition( screenHeight, screenWidth);
             }
             catch
             {
