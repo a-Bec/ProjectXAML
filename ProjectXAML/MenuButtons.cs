@@ -14,9 +14,7 @@ namespace ProjectXAML
                 int screenWidth = Screen.PrimaryScreen.Bounds.Width;
 
                 Player player = new Player();
-                player.setName();
                 player.setColor();
-                string name = player.getName();
                 int score = player.getScore();
                 player.setPosition( screenHeight, screenWidth);
             }

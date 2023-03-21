@@ -10,8 +10,8 @@
         Width="{Binding SystemParameters.PrimaryScreenWidth, Mode=OneWay}"
         Background="Black"
         >
-    <!-- MainMenue-->
-    <Grid VerticalAlignment="Center">
+    <!--MainMenue-->
+    <Grid x:Name="mainMenu" VerticalAlignment="Center" Visibility="Visible">
         <Grid.RowDefinitions>
             <RowDefinition Height="40"/>
             <RowDefinition Height="40"/>
@@ -41,7 +41,7 @@
                 </ControlTemplate>
             </Button.Template>
         </Button>
-        
+
         <Button x:Name="ExitButton" Content="Exit" HorizontalAlignment="Center" Grid.Row="2"
             VerticalAlignment="Center" Width="100" Height="30" Foreground="Green" Background="Transparent"
                 Click="ExitButton_Click">
@@ -53,7 +53,13 @@
                 </ControlTemplate>
             </Button.Template>
         </Button>
-        
+    </Grid>
+    <!--#endregion-->
+    
+    <!--NameField-->
+    <Grid x:Name="nameBox"  VerticalAlignment="Center" Visibility="Collapsed" DataContext="{Binding Player}">
+        <TextBlock Text="Choose your name:" />
+        <TextBlock Text="{Binding name, Mode=TwoWay}"/>
     </Grid>
     <!--#endregion-->
 
