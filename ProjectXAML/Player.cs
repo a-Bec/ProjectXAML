@@ -12,8 +12,8 @@ namespace ProjectXAML
         int score = 0;
         int playerPositionX;
         int playerPositionY;
-
-
+        int speed = 10;
+        int playerSize = 10;
 
         public string setName()
         {
@@ -30,7 +30,6 @@ namespace ProjectXAML
         }
         public void setPosition( int screenHight, int screenWidth )
         {
-            int playerSize = 10;
             int x = (screenWidth - playerSize) / 2;
             int y = (screenHight - playerSize) / 2;
         }
