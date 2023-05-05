@@ -2,6 +2,7 @@
 using System.Configuration;
 using System.Dynamic;
 using System.Runtime.InteropServices;
+using System.Windows.Input;
 
 namespace ProjectXAML
 {
@@ -43,9 +44,24 @@ namespace ProjectXAML
         {
             return color;
         }
-        public void movePlayer()
+        public void movePlayer(object Sender, KeyEventArgs e)
         {
-
+            if( e.Key == Key.W )
+            {
+                playerPositionX += 1;
+            }
+            if( e.Key == Key.S )
+            {
+                playerPositionX -= 1;
+            }
+            if( e.Key == Key.D )
+            {
+                playerPositionY += 1;
+            }
+            if (e.Key == Key.A ) 
+            {
+                playerPositionY -= 1;
+            }
         }
 
 
